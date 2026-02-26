@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <img src="WhatsApp Image 2026-02-26 at 23.37.32 (1).jpeg" alt="Operator Vision Showcase" width="100%" style="border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.1);">
+  <img src="V1-ezgif-split/frame_00_delay-0.042s.webp" alt="Adesh Yadav Portfolio Cover" width="100%" style="border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.1);">
 </p>
 
 ---
