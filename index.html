@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adesh Yadav | Cyber & DevOps</title>
+    <!-- Fonts matching the SaaS aesthetic: Inter for UI, Fira Code for Data -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome isolated for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="dark-theme">
+
+    <!-- Fixed full-screen Canvas for WebP Scroll Sequence -->
+    <div class="canvas-container">
+        <canvas id="hero-canvas"></canvas>
+        <div class="canvas-overlay"></div>
+    </div>
+
+    <!-- Sticky Navigation Navbar -->
+    <header class="navbar">
+        <div class="nav-content container">
+            <div class="logo mono text-orange w-full text-left block" style="margin-bottom: 1rem;">
+                Adesh Yadav
+            </div>
+            <div class="nav-bottom-row"
+                style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                <nav class="nav-links">
+                    <a href="#profile">Profile</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#training">Training</a>
+                    <a href="#arsenal">Skills</a>
+                    <a href="#missions">Missions</a>
+                </nav>
+                <div class="nav-socials">
+                    <a href="https://github.com/AdeshYadav8918" target="_blank" title="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/adesh-y-1b398b249/" target="_blank" title="LinkedIn"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/aadesh_clicks" target="_blank" title="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://topmate.io/adesh_yadav10" target="_blank" title="Book a 1:1 on Topmate"><i
+                            class="fas fa-handshake"></i></a>
+                    <a href="mailto:aadeshyadav309@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+919696987320" title="Phone"><i class="fas fa-phone"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Scroll Content wrapper -->
+    <main id="app-content">
+
+        <!-- 1. Hero Section -->
+        <section class="hero flex-center">
+            <div class="hero-inner reveal-up">
+                <div class="hero-pill mono">
+                    <span class="status-dot"></span> [ SYSTEM.INIT ] — OPERATOR LOGGED IN...
+                </div>
+                <h1 class="hero-title" style="font-size: 4rem; max-width: 900px; margin: 0 auto; line-height: 1.1;">
+                    Building Secure Systems &<br>
+                    <span class="text-gradient">Resilient Infrastructure.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Adesh Yadav • Cybersecurity & DevOps Specialist
+                </p>
+            </div>
+
+            <div class="scroll-prompt mono">
+                <span>SCROLL SEQUENCE</span>
+                <div class="mouse"></div>
+            </div>
+        </section>
+
+        <!-- 2. Profile Section -->
+        <section class="section pt-30" id="profile">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <h2 class="mono text-orange">[01] OPERATOR_PROFILE</h2>
+                    <h3 class="section-title">Identity & Philosophy</h3>
+                </div>
+
+                <div class="bento-grid profile-bento">
+                    <div class="bento-card col-span-2 glass reveal-stagger">
+                        <p class="mono text-dim mb-4">// BIO_DATA</p>
+                        <ul class="info-list">
+                            <li><span class="label">Name:</span> Adesh Yadav</li>
+                            <li><span class="label">Academic:</span> B.Tech CSE Student @ LPU</li>
+                            <li><span class="label">Status:</span> Class of 2026</li>
+                        </ul>
+                        <p class="philosophy mt-6">
+                            "Bridging the gap between high-level technical research and real-world impact. This journey
+                            began with leading social health initiatives for 100+ villagers, proving that even the most
+                            complex systems require clear communication and secure management."
+                        </p>
+                    </div>
+
+                    <div class="bento-card glass reveal-stagger flex-center col">
+                        <p class="mono text-dim mb-4 w-full text-left">// ELITE_BADGES</p>
+                        <div class="badge-container">
+                            <div class="badge orange-glow">
+                                <i class="fas fa-trophy"></i>
+                                <span>picoCTF 2025 Rank 439</span>
+                            </div>
+                            <div class="badge cyan-glow mt-4">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>THM Top 10%</span>
+                            </div>
+                            <div class="badge orange-glow mt-4">
+                                <i class="fas fa-flag"></i>
+                                <span>24Hr CTF (IIT Roorkee)</span>
+                            </div>
+                            <div class="badge cyan-glow mt-4">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>3-Day GISS Event (LPU)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Experience & Internship -->
+        <section class="section pt-30" id="experience">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <h2 class="mono text-orange">[02] FIELD_EXPERIENCE</h2>
+                    <h3 class="section-title">Internships & Impact</h3>
+                </div>
+
+                <div class="bento-card glass reveal-stagger mb-8">
+                    <div class="flex-between">
+                        <h4 class="category-title text-orange">Purvanchal Sewa Sansthan</h4>
+                        <span class="mono text-sm text-dim">Jun 2023 - Jul 2023</span>
+                    </div>
+                    <span class="mono text-cyan block mb-4">[ Role: Intern ]</span>
+                    <ul class="info-list" style="grid-template-columns: 1fr;">
+                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check text-dim mr-2"></i> Educated 100+
+                            villagers about govt. schemes (PM Jan Dhan Yojana, Ayushman Bharat, etc).</li>
+                        <li style="margin-bottom: 0.5rem;"><i class="fas fa-check text-dim mr-2"></i> Led 8 sessions on
+                            menstrual hygiene for 150+ women with 5 senior volunteers.</li>
+                        <li><i class="fas fa-check text-dim mr-2"></i> Sold 500+ sanitary pads to 150+ women, promoting
+                            informed health choices and safety.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Enterprise Training -->
+        <section class="section" id="training">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <h2 class="mono text-orange">[03] CORE_TRAINING</h2>
+                    <h3 class="section-title">Enterprise Certifications</h3>
+                </div>
+
+                <div class="mission-grid">
+                    <div class="mission-card glass reveal-stagger">
+                        <div class="mission-head">
+                            <span class="mono text-cyan text-sm">[ Jun 2025 - Jul 2025 ]</span>
+                        </div>
+                        <h4 class="mission-title">Broadridge Summer Training</h4>
+                        <ul class="text-sm text-dim mt-2" style="list-style-type: disc; margin-left: 1rem;">
+                            <li class="mb-2">Gained hands-on experience in EC2, VPC, IAM, and Security Groups to deploy
+                                secure cloud environments.</li>
+                            <li class="mb-2">Configured IAM policies, subnets, and route tables to enforce least
+                                privilege access.</li>
+                            <li>Implemented NGINX on EC2 instances ensuring security via firewall policies and SSH
+                                restrictions.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mission-card glass reveal-stagger">
+                        <div class="mission-head">
+                            <span class="mono text-cyan text-sm">[ Jun 2024 - Jul 2024 ]</span>
+                        </div>
+                        <h4 class="mission-title">IBM Security Trainee</h4>
+                        <ul class="text-sm text-dim mt-2" style="list-style-type: disc; margin-left: 1rem;">
+                            <li class="mb-2">Analyzed cyber threats (malware, phishing, ransomware) & risk assessments.
+                            </li>
+                            <li class="mb-2">Proficient in managing firewalls, IDS, and antivirus frameworks.</li>
+                            <li>Implemented password policies & incident response training.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mission-card glass reveal-stagger">
+                        <div class="mission-head">
+                            <span class="mono text-cyan text-sm">[ Dec 2023 - Feb 2024 ]</span>
+                        </div>
+                        <h4 class="mission-title">Elewayte Web Trainee</h4>
+                        <ul class="text-sm text-dim mt-2" style="list-style-type: disc; margin-left: 1rem;">
+                            <li class="mb-2">Acquired HTML, CSS, JS, and PHP to create dynamic platforms.</li>
+                            <li class="mb-2">Developed "Tourism World" with responsive gamified design elements.</li>
+                            <li>Collaborated with teams to troubleshoot web applications post-launch.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mission-card glass reveal-stagger">
+                        <div class="mission-head">
+                            <span class="mono text-cyan text-sm">[ Jan 2025 - Feb 2025 ]</span>
+                        </div>
+                        <h4 class="mission-title">Programming Pathshala</h4>
+                        <ul class="text-sm text-dim mt-2" style="list-style-type: disc; margin-left: 1rem;">
+                            <li class="mb-2">Deployed AWS EC2 instances within custom VPCs and configured IAM policies.
+                            </li>
+                            <li class="mb-2">Enforced least-privilege networking using Security Groups and Route Tables.
+                            </li>
+                            <li>Maintained >99% uptime securely hosting NGINX through strict firewalls.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Tech Arsenal (Updated) -->
+        <section class="section" id="arsenal">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <h2 class="mono text-orange">[04] TECH_ARSENAL</h2>
+                    <h3 class="section-title">Expanded Skill Matrix</h3>
+                </div>
+
+                <div class="bento-grid profile-bento">
+                    <div class="bento-card glass reveal-stagger w-full" style="grid-column: span 3;">
+                        <h4 class="category-title mb-4"><i class="fas fa-terminal text-orange"></i> Core Competencies
+                        </h4>
+                        <div
+                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+                            <div>
+                                <span class="mono text-dim block mb-2">// PROGRAMMING & SCRIPTING</span>
+                                <p class="text-sm">Python, SQL, JavaScript, HTML, CSS, React.js, Node.js</p>
+                            </div>
+                            <div>
+                                <span class="mono text-dim block mb-2">// SECURITY TOOLS</span>
+                                <p class="text-sm">BurpSuite, Metasploit, Wireshark, Nmap, SQLMap, OWASP ZAP</p>
+                            </div>
+                            <div>
+                                <span class="mono text-dim block mb-2">// CLOUD & DEVOPS</span>
+                                <p class="text-sm">AWS (EC2, IAM, VPC, Lambda, S3), Docker, Kubernetes, Jenkins,
+                                    Terraform, Ansible, NGINX, Linux</p>
+                            </div>
+                            <div>
+                                <span class="mono text-dim block mb-2">// CYBER DOMAINS</span>
+                                <p class="text-sm">Penetration Testing, Vulnerability Assessment, Forensics, Malware
+                                    Analysis, Threat Analysis</p>
+                            </div>
+                            <div>
+                                <span class="mono text-dim block mb-2">// SOFT SKILLS</span>
+                                <p class="text-sm">Problem-Solving, Analytical Thinking, Team Collaboration, Incident
+                                    Reporting & Documentation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Mission Logs -->
+        <section class="section" id="missions">
+            <div class="container">
+                <div class="section-header text-center reveal-up">
+                    <h2 class="mono text-orange">[05] MISSION_LOGS</h2>
+                    <h3 class="section-title">Active Cyber Quests</h3>
+                </div>
+
+                <div class="mission-grid" id="github-projects">
+                    <!-- High Caliber Missing Projects -->
+                    <div class="mission-card glass reveal-stagger">
+                        <div class="mission-head">
+                            <span class="mono text-cyan text-sm">[ OP: Cloud-Native CI/CD ]</span>
+                        </div>
+                        <h4 class="mission-title">Environment-Aware App</h4>
+                        <p class="mission-desc">Built CI/CD pipeline using GitHub Actions to auto-deploy Dockerized apps
+                            on AWS. Provisioned staging/prod dynamically with Terraform, integrating Slack API.</p>
+                        <a href="https://github.com/AdeshYadav8918" target="_blank" class="mission-link mono">
+                            View Proof <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="mission-card glass reveal-stagger">
+                        <div class="mission-head">
+                            <span class="mono text-cyan text-sm">[ OP: K8s Reliability ]</span>
+                        </div>
+                        <h4 class="mission-title">Self-Healing K8s Cluster</h4>
+                        <p class="mission-desc">Designed AWS Kubernetes cluster with Prometheus monitoring, AI-based
+                            traffic prediction, Terraform RBAC, and Alert Manager rollbacks.</p>
+                        <a href="https://github.com/AdeshYadav8918" target="_blank" class="mission-link mono">
+                            View Proof <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="mission-card glass reveal-stagger">
+                        <div class="mission-head">
+                            <span class="mono text-orange text-sm">[ OP: Pentest Lab ]</span>
+                        </div>
+                        <h4 class="mission-title">Xbersec Vuln-Lab</h4>
+                        <p class="mission-desc">Deployed an intentionally vulnerable web application in VirtualBox.
+                            Conducted full-scope vulnerabilities using Nmap, ZAP, and SQLMap.</p>
+                        <a href="https://github.com/AdeshYadav8918" target="_blank" class="mission-link mono">
+                            View Proof <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="mission-card glass reveal-stagger">
+                        <div class="mission-head">
+                            <span class="mono text-cyan text-sm">[ OP: Recon Automation ]</span>
+                        </div>
+                        <h4 class="mission-title">Network Traffic Analyzer</h4>
+                        <p class="mission-desc">Python & Scapy driven scanner automating active host and open port
+                            discovery, generating detailed network configuration exposure reports.</p>
+                        <a href="https://github.com/AdeshYadav8918/Network-Traffic-Analyzer.github.io" target="_blank"
+                            class="mission-link mono">
+                            View Proof <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <!-- New Appended Projects -->
+                    <div class="mission-card glass reveal-stagger">
+                        <div class="mission-head">
+                            <span class="mono text-cyan text-sm">[ OP: AI Analytics ]</span>
+                        </div>
+                        <h4 class="mission-title">Smart Sleep Analytics</h4>
+                        <p class="mission-desc">AI-driven pipeline using ML/DL models (CNN, LSTM) for 90%+ Apnea
+                            detection accuracy from physiological data.</p>
+                        <a href="https://github.com/AdeshYadav8918/Smart-Sleep-Analytics-Automated-Apnea-Detection-using-AI/"
+                            target="_blank" class="mission-link mono">
+                            View Proof <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="mission-card glass reveal-stagger">
+                        <div class="mission-head">
+                            <span class="mono text-cyan text-sm">[ OP: Cloud Architect ]</span>
+                        </div>
+                        <h4 class="mission-title">Serverless Order Pipeline</h4>
+                        <p class="mission-desc">Serverless workflows processing orders automatically via SQS, Step
+                            Functions, Lambda, SES, and EventBridge.</p>
+                        <a href="https://github.com/AdeshYadav8918/AWS-Serverless-Order-Processing-Pipeline"
+                            target="_blank" class="mission-link mono">
+                            View Proof <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="mission-card glass reveal-stagger">
+                        <div class="mission-head">
+                            <span class="mono text-cyan text-sm">[ OP: Event-Driven Base ]</span>
+                        </div>
+                        <h4 class="mission-title">Data Submission System</h4>
+                        <p class="mission-desc">Scalable AWS Amplify frontend paired directly with Lambda, DynamoDB, and
+                            SNS backend.</p>
+                        <a href="#" class="mission-link mono"
+                            style="pointer-events: none; color: var(--text-dim) !important;">
+                            Classified
+                        </a>
+                    </div>
+
+                    <!-- Marketing & SEO Missions -->
+                    <div class="mission-card glass reveal-stagger">
+                        <div class="mission-head">
+                            <span class="mono text-orange text-sm">[ OP: Audience Growth ]</span>
+                        </div>
+                        <h4 class="mission-title">IG Analytics & Strategy</h4>
+                        <p class="mission-desc">Executed a 7-day growth experiment. Established a data-driven content
+                            strategy via Instagram Insights.</p>
+                        <a href="#" class="mission-link mono"
+                            style="pointer-events: none; color: var(--text-dim) !important;">Classified</a>
+                    </div>
+
+                    <div class="mission-card glass reveal-stagger">
+                        <div class="mission-head">
+                            <span class="mono text-orange text-sm">[ OP: Search Ranking ]</span>
+                        </div>
+                        <h4 class="mission-title">SEO & Hashtag Config</h4>
+                        <p class="mission-desc">Optimized Instagram bio, captions, and exact alt text matching search
+                            intent, substantially increasing organic reach.</p>
+                        <a href="#" class="mission-link mono"
+                            style="pointer-events: none; color: var(--text-dim) !important;">Classified</a>
+                    </div>
+
+                    <div class="mission-card glass reveal-stagger">
+                        <div class="mission-head">
+                            <span class="mono text-orange text-sm">[ OP: Automation ]</span>
+                        </div>
+                        <h4 class="mission-title">AI Content Optimization</h4>
+                        <p class="mission-desc">Automated hook and CTA generation. Designed and deployed A/B tested
+                            visual content raising engagement metrics.</p>
+                        <a href="#" class="mission-link mono"
+                            style="pointer-events: none; color: var(--text-dim) !important;">Classified</a>
+                    </div>
+
+                    <!-- Restored Core Missions -->
+                    <div class="mission-card glass reveal-stagger">
+                        <div class="mission-head">
+                            <span class="mono text-cyan text-sm">[ OP: Network Intelligence ]</span>
+                        </div>
+                        <h4 class="mission-title">Neura-Trace</h4>
+                        <p class="mission-desc">Dual-interface packet analyzer capable of handling 1000 packets/sec for
+                            rapid SOC troubleshooting.</p>
+                        <a href="https://github.com/AdeshYadav8918" target="_blank" class="mission-link mono">
+                            View Proof <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="mission-card glass reveal-stagger">
+                        <div class="mission-head">
+                            <span class="mono text-cyan text-sm">[ OP: Ghost Monitor ]</span>
+                        </div>
+                        <h4 class="mission-title">Endpoint Telemetry</h4>
+                        <p class="mission-desc">Adversarial simulation tool engineered with a python keylogger and
+                            active screenshot engine.</p>
+                        <a href="https://github.com/AdeshYadav8918" target="_blank" class="mission-link mono">
+                            View Proof <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="mission-card glass reveal-stagger">
+                        <div class="mission-head">
+                            <span class="mono text-cyan text-sm">[ OP: Cloud Orchestrator ]</span>
+                        </div>
+                        <h4 class="mission-title">Serverless Pipeline</h4>
+                        <p class="mission-desc">Robust SQS, Lambda, and EventBridge pipeline designed for autonomous AWS
+                            cloud orchestration.</p>
+                        <a href="https://github.com/AdeshYadav8918" target="_blank" class="mission-link mono">
+                            View Proof <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <!-- Dynamic GitHub Projects will be appended below -->
+                </div>
+            </div>
+        </section>
+        <!-- 6. Operator Vision (Photography) -->
+        <section class="section" id="photography">
+            <div class="container">
+                <div class="section-header text-center reveal-up">
+                    <h2 class="mono text-orange">[06] HOBBIES</h2>
+                    <h3 class="section-title">Photography</h3>
+                    <p class="text-dim mt-2">Captured by <a href="https://www.instagram.com/aadesh_clicks"
+                            target="_blank" class="text-cyan">@aadesh_clicks</a></p>
+                </div>
+
+                <div class="photo-grid reveal-stagger">
+                    <a href="https://www.instagram.com/aadesh_clicks" target="_blank" class="photo-card glass">
+                        <img src="WhatsApp Image 2026-02-26 at 23.30.17.jpeg" alt="Instagram Post 1"
+                            class="gallery-img">
+                    </a>
+                    <a href="https://www.instagram.com/aadesh_clicks" target="_blank" class="photo-card glass">
+                        <img src="WhatsApp Image 2026-02-26 at 23.34.17.jpeg" alt="Instagram Post 2"
+                            class="gallery-img">
+                    </a>
+                    <a href="https://www.instagram.com/aadesh_clicks" target="_blank" class="photo-card glass">
+                        <img src="WhatsApp Image 2026-02-26 at 23.34.22.jpeg" alt="Instagram Post 3"
+                            class="gallery-img">
+                    </a>
+                    <a href="https://www.instagram.com/aadesh_clicks" target="_blank" class="photo-card glass">
+                        <img src="WhatsApp Image 2026-02-26 at 23.37.31.jpeg" alt="Instagram Post 4"
+                            class="gallery-img">
+                    </a>
+                    <a href="https://www.instagram.com/aadesh_clicks" target="_blank" class="photo-card glass">
+                        <img src="WhatsApp Image 2026-02-26 at 23.37.32 (1).jpeg" alt="Instagram Post 5"
+                            class="gallery-img">
+                    </a>
+                    <a href="https://www.instagram.com/aadesh_clicks" target="_blank" class="photo-card glass">
+                        <img src="WhatsApp Image 2026-02-26 at 23.37.32.jpeg" alt="Instagram Post 6"
+                            class="gallery-img">
+                    </a>
+                </div>
+
+                <div class="text-center mt-8 reveal-up">
+                    <a href="https://www.instagram.com/aadesh_clicks" target="_blank" class="btn-outline"><i
+                            class="fab fa-instagram mr-2"></i> View Full Gallery</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Vault of Honors -->
+        <section class="section pb-30" id="vault">
+            <div class="container">
+                <div class="bento-card vault-card glass flex-center col reveal-up">
+                    <i class="fas fa-fingerprint vault-icon"></i>
+                    <h3 class="section-title mt-4">Vault of Honors</h3>
+                    <p class="text-dim text-center mw-600 mb-8">Accessing restricted proprietary hardware and
+                        certifications...</p>
+
+                    <div class="vault-items" style="flex-wrap: wrap;">
+                        <div class="v-item reveal-stagger mb-4" style="flex: 1 1 45%; min-width: 250px;">
+                            <i class="fas fa-microchip text-orange"></i>
+                            <div>
+                                <span class="mono block">FILED_PATENT</span>
+                                <strong>Microfiber Cloth Anti-glare Cover</strong>
+                            </div>
+                        </div>
+                        <div class="v-item reveal-stagger mb-4" style="flex: 1 1 45%; min-width: 250px;">
+                            <i class="fas fa-shield-alt text-cyan"></i>
+                            <div>
+                                <span class="mono block">CERTIFICATION</span>
+                                <strong>Cyber Security Fundamentals (IBM)</strong>
+                            </div>
+                        </div>
+                        <div class="v-item reveal-stagger mb-4" style="flex: 1 1 45%; min-width: 250px;">
+                            <i class="fas fa-cloud text-orange"></i>
+                            <div>
+                                <span class="mono block">CERTIFICATION</span>
+                                <strong>Intro to Cloud Computing (NPTEL)</strong>
+                            </div>
+                        </div>
+                        <div class="v-item reveal-stagger mb-4" style="flex: 1 1 45%; min-width: 250px;">
+                            <i class="fas fa-user-secret text-cyan"></i>
+                            <div>
+                                <span class="mono block">CERTIFICATION</span>
+                                <strong>Ethical Hacking (NPTEL)</strong>
+                            </div>
+                        </div>
+                        <div class="v-item reveal-stagger mb-4" style="flex: 1 1 45%; min-width: 250px;">
+                            <i class="fas fa-flag text-orange"></i>
+                            <div>
+                                <span class="mono block">PARTICIPATION</span>
+                                <strong>Scythe CTF (IIT Roorkee)</strong>
+                            </div>
+                        </div>
+                        <div class="v-item reveal-stagger mb-4" style="flex: 1 1 45%; min-width: 250px;">
+                            <i class="fas fa-code text-cyan"></i>
+                            <div>
+                                <span class="mono block">CERTIFICATION</span>
+                                <strong>Python3 (CipherSchools)</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer border-top glass">
+            <div class="container flex-between footer-content">
+                <div class="footer-left">
+                    <span class="logo mono text-orange">Adesh Yadav</span>
+                    <p class="text-dim text-sm mt-2">&copy; 2026</p>
+                </div>
+                <div class="footer-right flex" style="gap: 1.5rem;">
+                    <a href="https://github.com/AdeshYadav8918" target="_blank" title="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/adesh-y-1b398b249/" target="_blank" title="LinkedIn"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/aadesh_clicks" target="_blank" title="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://topmate.io/adesh_yadav10" target="_blank" title="Book a 1:1 on Topmate"><i
+                            class="fas fa-handshake"></i></a>
+                    <a href="mailto:aadeshyadav309@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+919696987320" title="Phone"><i class="fas fa-phone"></i></a>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- External Script mapping scroll to canvas -->
+    <script src="script.js"></script>
+</body>
+
+</html>
