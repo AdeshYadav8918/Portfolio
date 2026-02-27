@@ -38,8 +38,12 @@ document.addEventListener("DOMContentLoaded", () => {
         img.onload = () => {
             loadedImages++;
             // Draw the very first frame immediately once it loads
-            if (loadedImages === 1 && i === 0) {
-                renderCanvasFrame(0);
+            if (i === 0) {
+                if (htmlObj.scrollTop === 0) {
+                    renderCanvasFrame(0);
+                } else {
+                    window.dispatchEvent(new Event('scroll'));
+                }
             }
         };
     }
