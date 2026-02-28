@@ -1,20 +1,32 @@
-/* CSS VARIABLES matching strictly to the Dark Mode SaaS HackerRank Dribbble UI */
 :root {
+    /* DEFAULT DARK THEME VARIABLES (HackerRank/SaaS) */
     --bg-base: #0a0a0a;
-    /* Deep Black background */
     --text-main: #fcfcfc;
-    /* Crisp white */
     --text-dim: #8b8e96;
-    /* Subtle gray */
 
     --accent-orange: #ff5500;
     --accent-cyan: #00ffcc;
 
     --panel-bg: rgba(18, 18, 22, 0.45);
     --panel-border: rgba(255, 255, 255, 0.08);
+    --glass-shadow: rgba(0, 0, 0, 0.3);
 
     --font-ui: 'Inter', sans-serif;
     --font-mono: 'Fira Code', monospace;
+}
+
+body.light-theme {
+    /* LIGHT THEME VARIABLES (Clean & Crisp Corporate) */
+    --bg-base: #f4f6f9;
+    --text-main: #111827;
+    --text-dim: #4b5563;
+
+    --accent-orange: #e65c00;
+    --accent-cyan: #00a3cc;
+
+    --panel-bg: rgba(255, 255, 255, 0.7);
+    --panel-border: rgba(0, 0, 0, 0.1);
+    --glass-shadow: rgba(0, 0, 0, 0.05);
 }
 
 /* RESET & BASE */
@@ -155,7 +167,7 @@ body.dark-theme {
     position: absolute;
     inset: 0;
     /* Gradient mask allowing the center content to pop while dimming edges */
-    background: radial-gradient(circle at center, rgba(10, 10, 10, 0.1) 0%, rgba(10, 10, 10, 0.85) 90%);
+    background: radial-gradient(circle at center, transparent 0%, var(--bg-base) 90%);
 }
 
 #app-content {
@@ -180,7 +192,7 @@ body.dark-theme {
 }
 
 .navbar.scrolled {
-    background: rgba(10, 10, 10, 0.75);
+    background: var(--panel-bg);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--panel-border);
 }
@@ -222,7 +234,7 @@ body.dark-theme {
     padding: 0.5rem 1.2rem;
     border-radius: 6px;
     text-decoration: none;
-    color: #fff;
+    color: var(--text-main);
     font-size: 15px;
     font-weight: 500;
     transition: all 0.2s;
@@ -230,8 +242,7 @@ body.dark-theme {
 }
 
 .btn-outline:hover {
-    background: rgba(255, 255, 255, 0.05);
-    border-color: rgba(255, 255, 255, 0.2);
+    background: var(--panel-border);
 }
 
 .nav-socials {
@@ -247,7 +258,7 @@ body.dark-theme {
 }
 
 .nav-socials a:hover i {
-    color: #fff;
+    color: var(--text-main);
 }
 
 /* HERO SECTION */
@@ -270,7 +281,7 @@ body.dark-theme {
     border-radius: 20px;
     font-size: 0.8rem;
     margin-bottom: 2rem;
-    background: rgba(0, 0, 0, 0.4);
+    background: var(--panel-bg);
     backdrop-filter: blur(5px);
 }
 
@@ -292,8 +303,7 @@ body.dark-theme {
 }
 
 .text-gradient {
-    /* Subtle silver/gray gradient, matching the SaaS tech aesthetic */
-    background: linear-gradient(135deg, #ffffff 0%, #7b7d85 100%);
+    background: linear-gradient(135deg, var(--text-main) 0%, var(--text-dim) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -400,7 +410,7 @@ body.dark-theme {
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     border-radius: 16px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 20px 40px var(--glass-shadow);
 }
 
 .bento-grid {
@@ -452,19 +462,19 @@ body.dark-theme {
     padding: 1rem 1.5rem;
     width: 100%;
     border-radius: 8px;
-    background: rgba(0, 0, 0, 0.2);
+    background: var(--panel-bg);
     font-family: var(--font-mono);
     font-size: 0.9rem;
 }
 
 .orange-glow {
-    border: 1px solid rgba(255, 85, 0, 0.4);
+    border: 1px solid var(--accent-orange);
     box-shadow: 0 0 15px rgba(255, 85, 0, 0.1);
     color: var(--accent-orange);
 }
 
 .cyan-glow {
-    border: 1px solid rgba(0, 255, 204, 0.4);
+    border: 1px solid var(--accent-cyan);
     box-shadow: 0 0 15px rgba(0, 255, 204, 0.1);
     color: var(--accent-cyan);
 }
@@ -566,7 +576,7 @@ body.dark-theme {
 
 .mission-card:hover {
     transform: translateY(-5px);
-    border-color: rgba(255, 255, 255, 0.2);
+    border-color: var(--panel-border);
 }
 
 .mission-head {
@@ -641,7 +651,7 @@ body.dark-theme {
     border-left: none;
     border-right: none;
     border-radius: 0;
-    background: rgba(5, 5, 5, 0.9);
+    background: var(--bg-base);
 }
 
 .footer-content {
@@ -655,7 +665,7 @@ body.dark-theme {
 }
 
 .footer-right a:hover {
-    color: #fff;
+    color: var(--text-main);
 }
 
 /* Desktop layout is now enforced globally; mobile media queries have been removed. */

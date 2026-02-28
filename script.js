@@ -222,5 +222,32 @@ document.addEventListener("DOMContentLoaded", () => {
     // CONTACT LOGIC DEPRECATED
     // Replaced with dedicated mailto: and tel: icons in header/footer
     // ----------------------------------------------------
+    // THEME TOGGLE (LIGHT/DARK MODE)
+    // ----------------------------------------------------
+    const themeToggleBtn = document.getElementById("theme-toggle");
+    const themeIcon = themeToggleBtn.querySelector("i");
+    const bodyEl = document.body;
+
+    // Check saved local storage preference
+    if (localStorage.getItem("theme") === "light") {
+        bodyEl.classList.replace("dark-theme", "light-theme");
+        themeIcon.classList.replace("fa-sun", "fa-moon");
+    }
+
+    themeToggleBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        if (bodyEl.classList.contains("dark-theme")) {
+            // Switch to Light Mode
+            bodyEl.classList.replace("dark-theme", "light-theme");
+            themeIcon.classList.replace("fa-sun", "fa-moon");
+            localStorage.setItem("theme", "light");
+        } else {
+            // Switch to Dark Mode
+            bodyEl.classList.replace("light-theme", "dark-theme");
+            themeIcon.classList.replace("fa-moon", "fa-sun");
+            localStorage.setItem("theme", "dark");
+        }
+    });
 
 });
