@@ -35,6 +35,11 @@ body.dark-theme {
     line-height: 1.6;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
+
+    /* Enforce desktop layout strictly across all devices */
+    min-width: 1280px !important;
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
 
 /* UTILITY CLASSES */
