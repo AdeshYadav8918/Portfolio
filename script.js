@@ -39,14 +39,23 @@ document.addEventListener("DOMContentLoaded", () => {
             loadedImages++;
             // Draw the very first frame immediately once it loads
             if (i === 0) {
-                if (htmlObj.scrollTop === 0) {
-                    renderCanvasFrame(0);
-                } else {
-                    window.dispatchEvent(new Event('scroll'));
-                }
+                requestAnimationFrame(() => renderCanvasFrame(0));
+            }
+            // Dispatch a scroll event on the first loaded image to initialize the correct frame safely
+            if (loadedImages === 1) {
+                window.dispatchEvent(new Event('scroll'));
             }
         };
     }
+
+    // Fallback: forcefully trigger the scroll handler to paint the canvas properly after the main thread is clear
+    setTimeout(() => {
+        window.dispatchEvent(new Event('scroll'));
+    }, 150);
+
+    window.addEventListener('load', () => {
+        window.dispatchEvent(new Event('scroll'));
+    });
 
     // Safely draw a frame to the canvas, handling aspect ratio covering
     function renderCanvasFrame(index) {
