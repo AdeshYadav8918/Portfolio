@@ -12,6 +12,14 @@
     <link rel="stylesheet" href="style.css">
     <!-- FontAwesome isolated for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Enforce custom domain -->
+    <script>
+        const allowedDomains = ['adeshyadav.vercel.app', 'localhost', '127.0.0.1'];
+        if (!allowedDomains.includes(window.location.hostname)) {
+            window.location.replace('https://adeshyadav.vercel.app' + window.location.pathname + window.location.search);
+        }
+    </script>
 </head>
 
 <body class="dark-theme">
